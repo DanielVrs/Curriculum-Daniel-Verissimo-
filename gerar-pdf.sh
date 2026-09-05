@@ -23,9 +23,11 @@ trap 'kill "${PID_PT:-}" "${PID_EN:-}" 2>/dev/null || true; rm -rf "$TMP"' EXIT
 cp -r . "$TMP/en" && rm -rf "$TMP/en/.git"
 sed -i 's|<script src="script.js"></script>|<script src="script.js"></script><script>document.querySelector(".lang-btn[data-lang=en]").click();</script>|' "$TMP/en/index.html"
 
-python3 -m http.server "$PORTA" --bind 127.0.0.1 >/dev/null 2>&1 & PID_PT=$!
-(cd "$TMP/en" && python3 -m http.server $((PORTA+1)) --bind 127.0.0.1 >/dev/null 2>&1) & PID_EN=$!
-sleep 1
+python3 -m http.server "$PORTA" --bind 127.0.0.1 --directory . >/dev/null 2>&1 & PID_PT=$!
+python3 -m http.server $((PORTA+1)) --bind 127.0.0.1 --directory "$TMP/en" >/dev/null 2>&1 & PID_EN=$!
+sleep 1.5
+curl -sf -o /dev/null "http://127.0.0.1:$PORTA/" || { echo "servidor PT nao subiu na porta $PORTA"; exit 1; }
+curl -sf -o /dev/null "http://127.0.0.1:$((PORTA+1))/" || { echo "servidor EN nao subiu na porta $((PORTA+1))"; exit 1; }
 
 FLAGS="--headless=new --no-sandbox --disable-gpu --virtual-time-budget=10000 --no-pdf-header-footer"
 "$CHROME" $FLAGS --print-to-pdf="assets/Daniel-Verissimo-CV.pdf"    "http://127.0.0.1:$PORTA/"          2>/dev/null
