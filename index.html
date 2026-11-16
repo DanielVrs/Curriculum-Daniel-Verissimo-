@@ -90,8 +90,8 @@
     <!-- 01 SOBRE -->
     <section class="sec" id="sobre">
       <header class="sec-head"><span class="sec-num">01</span><h2 data-en="About">Sobre</h2></header>
-      <p class="lead" data-en="Full-stack developer focused on <em>data-driven products</em>, from the database to the interface. Currently building multi-tenant SaaS platforms and high-volume data pipelines, with a focus on performance, reliability and well-tested code. Multi-domain background: energy, asset maintenance and tech education.">
-        Desenvolvedor full stack focado em <em>produtos orientados a dados</em>, do banco de dados à interface. Atualmente construindo plataformas SaaS multi-tenant e pipelines de dados de alto volume, com foco em performance, confiabilidade e código coberto por testes. Trajetória multi-domínio: energia, manutenção de ativos e educação em tecnologia.
+      <p class="lead" data-en="Full-stack developer focused on <em>data-driven products</em>, from the database to the interface. Experience with multi-tenant SaaS platforms and high-volume data pipelines, with a focus on performance, reliability and well-tested code.">
+        Desenvolvedor full stack focado em <em>produtos orientados a dados</em>, do banco de dados à interface. Experiência com plataformas SaaS multi-tenant e pipelines de dados de alto volume, com foco em performance, confiabilidade e código coberto por testes.
       </p>
     </section>
 
@@ -103,51 +103,20 @@
 
         <!-- FINDER ENERGIA -->
         <article class="job">
-          <span class="period" data-en="MAY/2025 — PRESENT">MAI/2025 — ATUAL</span>
+          <span class="period" data-en="MAY/2025 — SEP/2026">MAI/2025 — SET/2026</span>
           <h3 class="job-title" data-en="Full-Stack Developer">Desenvolvedor Full Stack</h3>
-          <p class="job-company" data-en="<strong>Finder Energia</strong> · Energy, weather &amp; solar O&amp;M SaaS · Remote"><strong>Finder Energia</strong> · SaaS de energia, clima e O&amp;M solar · Remoto</p>
-          <p class="job-intro" data-en="Three production products for energy-sector clients (Eneva, Statkraft, Kroma, Polimix and others), working end to end from ClickHouse queries to the UI.">Três produtos em produção para clientes do setor elétrico (Eneva, Statkraft, Kroma, Polimix e outros), atuando de ponta a ponta, da query no ClickHouse à interface.</p>
-
-          <!-- Produto 1: plataforma SaaS -->
-          <div class="product">
-            <h4 data-en="Multi-tenant energy monitoring SaaS">Plataforma SaaS multi-tenant de monitoramento de energia</h4>
-            <div class="tech"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>shadcn</span><span>Drizzle</span><span>PostgreSQL</span><span>ClickHouse</span><span>ECharts</span><span>Leaflet</span><span>Puppeteer</span><span>Vitest</span><span>Playwright</span></div>
-            <ul class="bul">
-              <li data-en="Developed screens, API routes and server actions across 10 client modules on Next.js 16 App Router, with React Server Components, cache components and typed data libraries">Desenvolvi telas, rotas de API e server actions em 10 módulos de clientes, em Next.js 16 App Router com React Server Components, cache components e libs de dados tipadas</li>
-              <li data-en="Built the utility-scale solar monitoring module for Eneva: production, availability, real time, inverter curves, trackers, soiling and operational map over 5-minute time series in ClickHouse with interactive ECharts dashboards">Construí o módulo de monitoramento solar utility-scale da Eneva: produção, disponibilidade, tempo real, curva de inversores, trackers, soiling e mapa operacional, sobre séries de 5 minutos em ClickHouse com dashboards interativos em ECharts</li>
-              <li data-en="Implemented ONS regulatory screens (ONS Justification, Tracker Validation, SAGER mirror, constraint-off) integrating the ONS Sinapse API, ONS open data and SCADA, with Leaflet maps and automatic document generation">Implementei as telas regulatórias do ONS (Justificativa ONS, Tracker Validation, Espelho SAGER e constraint-off) integrando a API ONS Sinapse, open data do ONS e SCADA, com mapa Leaflet e geração automática de documento</li>
-              <li data-en="Designed the automated briefing pipeline for 4 clients: provider engine, PDF via Puppeteer/headless Chrome, email via Nodemailer and XLSX export, with graceful fallback when Chrome fails">Projetei o pipeline de briefings automáticos para 4 clientes: engine de providers, PDF via Puppeteer/headless Chrome, email via Nodemailer e exportação XLSX, com fallback gracioso quando o Chrome falha</li>
-              <li data-en="Created the hydrology module from scratch (points, real time, reports, alerts and accuracy by horizon) adding GloFAS/Open-Meteo river discharge as a new source in the canonical data library">Criei do zero o módulo hidrológico (pontos, tempo real, relatórios, alertas e acurácia por horizonte), adicionando vazão GloFAS/Open-Meteo como nova fonte na lib de dados canônica</li>
-              <li data-en="Led the migration from raw SQL in screens to typed data libraries (fetchEneva, fetchClima, fetchPolimix), with 12-month v1×v2 parity gates before each cutover, fixing timezone (UTC×BRT) and unit drift">Liderei a migração de SQL cru nas telas para libs de dados tipadas (fetchEneva, fetchClima, fetchPolimix), com gates de paridade v1×v2 de 12 meses antes de cada cutover, eliminando divergências de fuso (UTC×BRT) e de unidade</li>
-              <li data-en="Wrote 88 test files (335 cases) in Vitest and Playwright keeping the tsc + full-suite PR gate green, and built the authenticated JSON/CSV Futura API for Power Query with 100% parity against the client's spreadsheet">Escrevi 88 arquivos de teste (335 casos) em Vitest e Playwright mantendo o gate de PR (tsc + suíte completa) verde, e construí a API Futura autenticada (JSON/CSV para Power Query) com 100% de paridade contra a planilha do cliente</li>
-            </ul>
-          </div>
-
-          <!-- Produto 2: OmGrid -->
-          <div class="product">
-            <h4 data-en="OmGrid · solar plant O&amp;M platform">OmGrid · plataforma de O&amp;M de usinas solares</h4>
-            <div class="tech"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Drizzle</span><span>PostgreSQL</span><span>ClickHouse</span><span>Recharts</span><span>Leaflet</span><span>Playwright</span><span>AES-256-GCM</span></div>
-            <ul class="bul">
-              <li data-en="Developed the maintenance (O&amp;M) module end to end: 9-stage state machine, transition endpoints, Kanban, recurring-maintenance calendar and notifications linking company, field technician and plant owner">Desenvolvi o módulo de manutenção (O&amp;M) ponta a ponta: máquina de estados de 9 etapas, endpoints de transição, Kanban, calendário com manutenções recorrentes e notificações, ligando empresa, técnico de campo e dono da usina</li>
-              <li data-en="Built most of the API routes and screens of the Admin, Technician and Client portals, with RSC, Drizzle ORM on PostgreSQL and telemetry queries in ClickHouse">Construí boa parte das rotas de API e telas dos portais Admin, Técnico e Cliente, com RSC, Drizzle ORM sobre PostgreSQL e consultas de telemetria em ClickHouse</li>
-              <li data-en="Integrated and stabilised data collection from 6 inverter manufacturers (Hope, SAJ, Solis, Renovigi, Livoltek, Intelbras) with retry, per-manufacturer health checks and JSONB overrides; encrypted portal credentials with AES-256-GCM">Integrei e estabilizei a coleta de 6 fabricantes de inversores (Hope, SAJ, Solis, Renovigi, Livoltek, Intelbras) com retry, health check por fabricante e overrides em JSONB; credenciais dos portais criptografadas com AES-256-GCM</li>
-              <li data-en="Created the project's quality pipeline (health check, smoke and E2E CLI) plus 29 Playwright tests covering the full maintenance flow, RBAC and screenshot visual regression">Criei o pipeline de qualidade do projeto (CLI de health check, smoke e E2E) e 29 testes Playwright cobrindo o fluxo completo de manutenção, RBAC e regressão visual por screenshot</li>
-              <li data-en="Shipped the plant analytics panel: Recharts charts, Leaflet maps, Open-Meteo weather, performance ratio, savings in BRL and CO₂ avoided, PDF export (jsPDF) and email delivery (SMTP)">Entreguei o painel analítico de usinas: gráficos Recharts, mapas Leaflet, clima via Open-Meteo, performance ratio, economia em R$ e CO₂ evitado, exportação em PDF (jsPDF) e envio por email (SMTP)</li>
-            </ul>
-          </div>
-
-          <!-- Produto 3: Solar Futura -->
-          <div class="product">
-            <h4 data-en="Solar Futura · data engineering for 22 PV plants">Solar Futura · engenharia de dados de 22 usinas fotovoltaicas</h4>
-            <div class="tech"><span>Python</span><span>pandas</span><span>numpy</span><span>pvlib</span><span>scikit-learn</span><span>ClickHouse</span><span>MySQL</span><span>Streamlit</span><span>Plotly</span><span>pytest</span></div>
-            <ul class="bul">
-              <li data-en="Developed Python collectors and ingestion pipelines into ClickHouse: Way2 official meter API (exponential backoff, parallel collection), Soltec trackers (16.3M-row backfill, idempotent ingestion with a defensive parser) and a MySQL→ClickHouse migration">Desenvolvi coletores e pipelines de ingestão em Python para ClickHouse: API do medidor oficial Way2 (backoff exponencial, coleta paralela), trackers Soltec (backfill de 16,3 milhões de linhas, ingestão idempotente com parser defensivo) e migração MySQL→ClickHouse</li>
-              <li data-en="Implemented IEC 61724 performance KPIs for 22 PV plants (availability, Performance Ratio, P50/P90, ONS constraints), taking the pvlib simulation from daily to 5-minute resolution and removing duplicates with ReplacingMergeTree">Implementei os KPIs de performance de 22 usinas segundo a IEC 61724 (disponibilidade, Performance Ratio, P50/P90, restrições ONS), levando a simulação pvlib de diária para 5 minutos e eliminando duplicatas com ReplacingMergeTree</li>
-              <li data-en="Built the tracker and inverter underperformance engine now in production: dynamic 30-minute baseline, IQR outlier removal, losses in MWavg and severity-based alerts">Criei o motor de detecção de subperformance de trackers e inversores, em produção: baseline dinâmico de 30 minutos, remoção de outliers por IQR, perdas em MWméd e alertas por severidade</li>
-              <li data-en="Fixed 4 consistency bugs in the 5-minute loss cascade of a 9,800-line engine and covered them with 15 pytest tests validating energy closure (error &lt; 0.001 MWavg), with the existing 330-test suite kept green">Corrigi 4 bugs de consistência da cascata de perdas de 5 minutos em um engine de 9.800 linhas e cobri com 15 testes pytest que validam o fechamento energético (erro &lt; 0,001 MWméd), mantendo a bateria de 330 testes verde</li>
-              <li data-en="Delivered solar-data analyses: L0→L5 pipeline correlating 22 stations (Measure-Correlate-Predict), GHI→POA with pvlib's DISC model (R² ≈ 0.88), a Streamlit/Plotly dashboard and an ML prototype (Random Forest, TimeSeriesSplit) for the ONS productivity function">Entreguei análises de dados solarimétricos: pipeline L0→L5 correlacionando 22 estações (Measure-Correlate-Predict), GHI→POA com o modelo DISC do pvlib (R² ≈ 0,88), dashboard Streamlit/Plotly e protótipo de ML (Random Forest, TimeSeriesSplit) para a função de produtividade do ONS</li>
-            </ul>
-          </div>
+          <p class="job-company" data-en="<strong>Finder Energia</strong> · Remote"><strong>Finder Energia</strong> · Remoto</p>
+          <p class="job-intro" data-en="Full-stack development of data-driven SaaS products in production, working end to end from the database to the UI.">Desenvolvimento full stack de produtos SaaS orientados a dados em produção, atuando de ponta a ponta, do banco de dados à interface.</p>
+          <ul class="bul">
+            <li data-en="Built screens and interactive dashboards with Next.js (App Router, React Server Components), React and TypeScript, using Tailwind CSS, shadcn/ui, ECharts, Recharts and Leaflet maps">Desenvolvi telas e dashboards interativos em Next.js (App Router, React Server Components), React e TypeScript, com Tailwind CSS, shadcn/ui, ECharts, Recharts e mapas Leaflet</li>
+            <li data-en="Implemented API routes, server actions and typed data libraries with Drizzle ORM on PostgreSQL and analytical queries in ClickHouse over high-volume time series">Implementei rotas de API, server actions e libs de dados tipadas com Drizzle ORM sobre PostgreSQL e consultas analíticas em ClickHouse sobre séries temporais de alto volume</li>
+            <li data-en="Integrated third-party APIs and data collection with retry, health checks and encrypted credentials (AES-256-GCM)">Integrei APIs de terceiros e coleta de dados com retry, health checks e credenciais criptografadas (AES-256-GCM)</li>
+            <li data-en="Automated report generation in PDF (Puppeteer, jsPDF) and XLSX, with email delivery">Automatizei a geração de relatórios em PDF (Puppeteer, jsPDF) e XLSX, com envio por email</li>
+            <li data-en="Developed ingestion and ETL pipelines in Python (pandas, numpy), with performance indicators, anomaly detection and ML prototypes in scikit-learn">Desenvolvi pipelines de ingestão e ETL em Python (pandas, numpy), com cálculo de indicadores de performance, detecção de anomalias e protótipos de ML em scikit-learn</li>
+            <li data-en="Led the migration from raw SQL to typed data libraries, validating parity between versions before each cutover">Liderei a migração de SQL cru para libs de dados tipadas, validando a paridade entre versões antes de cada cutover</li>
+            <li data-en="Wrote automated tests with Vitest, Playwright and pytest (unit, E2E, RBAC and visual regression), keeping the PR gate green">Escrevi testes automatizados com Vitest, Playwright e pytest (unitários, E2E, RBAC e regressão visual), mantendo o gate de PR verde</li>
+          </ul>
+          <div class="tech"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>Drizzle</span><span>PostgreSQL</span><span>ClickHouse</span><span>ECharts</span><span>Leaflet</span><span>Python</span><span>pandas</span><span>Vitest</span><span>Playwright</span><span>pytest</span></div>
         </article>
 
         <!-- GAXTE -->

@@ -336,7 +336,7 @@ svg { flex-shrink: 0; }
   .sec-head h2 { font-size: 17px; }
   .lead { font-size: 12px; max-width: none; }
 
-  .job { padding-left: 24px; padding-bottom: 14px; }
+  .job { padding-left: 24px; padding-bottom: 14px; break-inside: avoid; }
   .job-title { font-size: 15px; margin-top: 6px; }
   .job-intro { font-size: 12px; max-width: none; }
   .product { padding: 10px 12px 9px; margin-top: 8px; break-inside: avoid; }
@@ -347,6 +347,7 @@ svg { flex-shrink: 0; }
   .bul li { font-size: 10.5px; line-height: 1.45; }
 
   .stack-grid, .edu-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .edu-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .stack-card, .edu { padding: 9px 11px; break-inside: avoid; }
   .stack-card h4 { font-size: 10.5px; margin-bottom: 6px; }
   .tag { font-size: 10px; padding: 2px 7px; }
