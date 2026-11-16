@@ -332,7 +332,7 @@ svg { flex-shrink: 0; }
 
   .content { padding: 14px 0 0; }
   .sec { margin-bottom: 16px; }
-  .sec-head { margin-bottom: 10px; }
+  .sec-head { margin-bottom: 10px; break-after: avoid; }
   .sec-head h2 { font-size: 17px; }
   .lead { font-size: 12px; max-width: none; }
 
